@@ -1,5 +1,5 @@
 
-# Whaticket - BRDSoft
+# Whaticket 
 
 Esse sistema tem o objetivo de unificar e facilitar a logistica e gestão de atendimentos, com criação de chamados e registro das conversar.
 
