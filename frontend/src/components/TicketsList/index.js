@@ -179,7 +179,7 @@ const reducer = (state, action) => {
 			type: "LOAD_TICKETS",
 			payload: tickets,
 		});
-	}, [tickets]);
+	}, [tickets,searchParam,status]);
 
 	useEffect(() => {
 		const socket = openSocket();
@@ -232,7 +232,7 @@ const reducer = (state, action) => {
 			}
 		});
 
-		socket.on("contact", data => {
+		socket.on("contact", data => {	
 			if (data.action === "update") {
 				dispatch({
 					type: "UPDATE_TICKET_CONTACT",
